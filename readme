@@ -1,0 +1,14 @@
+Compile: g++ smoothq.cpp edit.cpp -std=c++11 -fopenmp  -o smoothq -O3
+
+Usage:./smoothq input.fasta > output.txt
+
+Parameters: All default parameters are applied, could be tuned in smoothq.h
+
+Output format:
+Id of string 1, Id of string 2, #num of matched signatures, Direction of string 1(0 = forward, 1 = reversed), Overlap start position on string 1,
+Overlap end position on string 1, Length of string 1, Direction of string 2(0 = forward, 1 = reversed), Overlap start position on string 2,
+Overlap end position on string 2, Length of string 2
+
+Note the Id range from 1,2,3,...n
+
+Acknowledgement: we use the xxHash package in our project (https://github.com/Cyan4973/xxHash)
