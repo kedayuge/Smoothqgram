@@ -1,4 +1,3 @@
-Code for paper: Smooth q-Gram, and Its Applications to Detection of Overlaps among Long, Error-Prone Sequencing Reads
 
 Compile: g++ smoothq.cpp edit.cpp -std=c++11 -fopenmp  -o smoothq -O3
 
